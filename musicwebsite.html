@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Music</title>
+	<link rel="icon" type="image/x-icon" href="image/music_note.ico">
+	<style>
+		/* Styling the body */
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		/* Styling the background image by 
+		giving its url and position */
+		.container {
+			height: 100vh;
+			width: 100%;
+			background-image: url('image/alan_walker_background.png');
+            
+
+			/* Image used: */
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+
+		/* Styling the list tags to the 
+		right of the navigation bar */
+		.nav li {
+			float: right;
+			list-style: none;
+		}
+
+		/* Styling the anchor tags of 
+		the navigation bar */
+		.nav a {
+			list-style: none;
+			height: 50px;
+			line-height: 50px;
+			font-size: 1rem;
+			font-weight: 550;
+			display: block;
+			padding: 5px 35px;
+			color: black;
+			text-decoration: none;
+		}
+
+		/* Giving position and margin 
+		to the content-div */
+		.content {
+			width: 100%;
+			position: absolute;
+			top: 45%;
+		}
+
+		/* Styling the left-col by 
+		giving margin */
+		.left-col {
+			margin-left: 11%;
+		}
+
+		/* Styling the my sound placed 
+		in the left-col */
+		.left-col h1 {
+			font-size: 50px;
+			color: black;
+			font-family: fantasy;
+            
+			
+        }
+
+		/* Styling the right-col */
+		.right-col {
+			float: right;
+			margin-right: 10%;
+			margin-top: -5%;
+			display: flex;
+			align-items: center;
+            
+		}
+
+		/* Styling the text in the right-col */
+		.right-col p {
+			font-size: 21px;
+			color: white;
+			font-weight: 650;
+			margin-right: 20px;
+		}
+
+		/* Styling the cursor type 
+		of the icon to pointer */
+		#icon {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<ul class="nav">
+			<li><a href="https://alanwalker.com/about/" target="_blank">CONTACT</a></li>
+			<li><a href="https://alanwalker.com/about/" target="_blank">ABOUT</a></li>
+			<li><a href="https://en.wikipedia.org/wiki/Alan_Walker" target="_blank">ARTISTS</a></li>
+			<li><a href="https://music.youtube.com/channel/UCaXJEi-wOOVe2eZZHzyz4mQ"
+			target="_blank">MUSIC</a></li>
+			<li><a href="#">HOME</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<div class="left-col">
+			<h1><i>Faded</i></h1>
+		</div>
+
+		<div class="right-col">
+
+			<p><i>Click Here To Listen &#127925; &#127926;</i></p>
+
+			<iframe width="420" height="315"
+            src="https://www.youtube.com/embed/60ItHLz5WEA">
+            </iframe>
+
+			
+		</div>
+	</div>
+			
+</body>
+</html>

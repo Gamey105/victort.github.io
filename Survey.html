@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Would you rather?
+	</title>
+	<link rel="icon" type="image/x.-icon" href="image/favicon.ico">
+
+	<style>
+		* {
+ 			 box-sizing: border-box;
+		}
+
+        .column {
+ 			 float: left;
+ 			 width: 33.33%;
+ 			 padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+		}
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #20f4f1;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: arial;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Would You Rather?</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+	<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+
+		<div class="form-control">
+			<p> 1. Like dogs or cats?</p>
+			<img src="image/cats_and_dogs.jpg" alt="Cat or dog" style="width:450px;height:300px;">
+			
+			<br>
+			<br>
+			
+			<!--Radio button-->
+			<label for="pet">
+                <input type="radio"
+                       id="pet"
+                       name="pet">Dog</input>
+            </label>
+            <label for="pet">
+                <input type="radio"
+                       id="pet"
+                       name="pet">Cat</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 2. Like summer or winter?</label>
+			<img src="image/summer_and_winter.jpg" alt="Summer or winter" style="width:450px;height:300px;">
+			
+			<br>
+			<br>
+
+			<!--Radio button-->
+			<label for="climate">
+                <input type="radio"
+                       id="climate"
+                       name="climate">Summer</input>
+            </label>
+            <label for="climate">
+                <input type="radio"
+                       id="climate"
+                       name="climate">Winter</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 3. Like a rainy day or a sunny day ?</label>
+			<img src="image/sunny_rainy.jpg" alt="Sunny or rainy" style="width:450px;height:300px;">
+			
+			<br>
+			<br>			
+			
+			<!--Radio button-->
+			<label for="weather">
+                <input type="radio"
+                       id="weather"
+                       name="weather">Rainy</input>
+            </label>
+            <label for="weather">
+                <input type="radio"
+                       id="weather"
+                       name="weather">Sunny</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 4. Live in the country or city?</label>
+			<img src="image/country_and_city.jpg" alt="Country or city" style="width:450px;height:300px;">
+			
+			<br>
+			<br>
+			
+			<!--Radio button-->
+			<label for="location">
+                <input type="radio"
+                       id="location"
+                       name="location">Country</input>
+            </label>
+            <label for="location">
+                <input type="radio"
+                       id="location"
+                       name="location">City</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 5. Have the ability to see 10 minutes into the future or 150 years into the future?</label>
+			<img src="image/i-see-the-future.jpg" alt="I see the future" style="width:300px;height:300px;">
+			
+			<br>	
+			<br>
+			
+			<!--Radio button-->
+			<label for="ability">
+                <input type="radio"
+                       id="ability"
+                       name="ability">10 minutes</input>
+            </label>
+            <label for="ability">
+                <input type="radio"
+                       id="ability"
+                       name="ability">150 years</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 6. Be in jail for five years or be in a coma for a decade?</label>
+
+			<!--uses table to set 2 images together using 1 row and 2 columns-->
+			<div class="row">
+				<div class="column">
+				  <img src="image/jail.png" alt="Jail" style="width:100%">
+				</div>
+				<div class="column">
+				  <img src="image/coma.jpg" alt="Coma" style="width:100%">
+				</div>
+			</div>
+			
+			<br>
+			
+			<!--Radio button-->
+			<label for="decision">
+                <input type="radio"
+                       id="decision"
+                       name="decision">Jail for five years</input>
+            </label>
+            <label for="decision">
+                <input type="radio"
+                       id="decision"
+                       name="decision">Coma for a decade</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 7. Have a personal maid or a personal chef?</label>
+
+			<!--uses table to set 2 images together using 1 row and 2 columns-->
+			<div class="row">
+				<div class="column">
+				  <img src="image/maid.jpg" alt="Maid" style="width:100%">
+				</div>
+				<div class="column">
+				  <img src="image/chef.jpg" alt="Chef" style="width:100%">
+				</div>
+			</div>
+			<br>
+			
+			<!--Radio button-->
+			<label for="service">
+                <input type="radio"
+                       id="service"
+                       name="service">Maid</input>
+            </label>
+            <label for="service">
+                <input type="radio"
+                       id="service"
+                       name="service">Chef</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 8. Find true love today or win the lottery next year?</label>
+			
+			<!--uses table to set 2 images together using 1 row and 2 columns-->
+			<div class="row">
+				<div class="column">
+				  <img src="image/love.png" alt="Couple hugging" style="width:100%">
+				</div>
+				<div class="column">
+				  <img src="image/lottery_ticket.jpg" alt="lottery ticket" style="width:100%">
+				</div>
+			</div>
+			
+			<br>
+			
+			<!--Radio button-->
+			<label for="option">
+                <input type="radio"
+                       id="option"
+                       name="option">True love</input>
+            </label>
+            <label for="option">
+                <input type="radio"
+                       id="option"
+                       name="option">Win the lottery</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		<div class="form-control">
+			<label> 9. Have everyone you know be able to read your thoughts or for everyone you know to have access to your Internet history?</label>
+			
+			<!--uses table to set 2 images together using 1 row and 2 columns-->
+			<div class="row">
+				<div class="column">
+				  <img src="image/thoughts.png" alt="Thought Bubble" style="width:100%">
+				</div>
+				<div class="column">
+				  <img src="image/web_history.webp" alt="Internet History" style="width:100%">
+				</div>
+			</div>
+			
+			<br>
+			
+			<!--Radio button-->
+			<label for="option1">
+                <input type="radio"
+                       id="option1"
+                       name="option1">Read your thoughts</input>
+            </label>
+            <label for="option1">
+                <input type="radio"
+                       id="option1"
+                       name="option1">Have access to your Internet</input>
+            </label>
+		</div>
+		
+		<br>
+		
+		
+		<div class="form-control">
+			<label> 10. Lose your sight or your memories?</label>
+
+			<!--uses table to set 2 images together using 1 row and 2 columns-->
+			<div class="row">
+				<div class="column">
+				  <img src="image/lost_vision.jpg" alt="Sight lost" style="width:100%">
+				</div>
+				<div class="column">
+				  <img src="image/memory.png" alt="Memory lost" style="width:100%">
+				</div>
+			</div>
+			
+			<br>
+			
+			<!--Radio button-->
+			<label for="option3">
+                <input type="radio"
+                       id="option3"
+                       name="option3">Sight</input>
+            </label>
+            <label for="option3">
+                <input type="radio"
+                       id="option3"
+                       name="option3">Memories</input>
+            </label>
+		</div>
+		
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+</html>
